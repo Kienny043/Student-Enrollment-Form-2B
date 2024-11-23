@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Box -->
+        <div class="header-box">
+            <h1>Student Enrollment Form</h1>
+        </div>
+
+        <!-- Instructions Box -->
+        <div class="instructions-box">
+            <h3>Instructions:</h3>
+            <ol>
+                <li>Fill in the form fields.</li>
+                <li>Check your interests.</li>
+                <li>Click "Enroll Now" to submit.</li>
+            </ol>
+        </div>
+
+        <!-- Form Section -->
+        <div class="form-section">
+            <!-- Full Name -->
+            <div class="form-item">
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+            </div>
+
+            <!-- Email -->
+            <div class="form-item">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <!-- Age -->
+            <div class="form-item">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="1" max="100" placeholder="0" required>
+            </div>
+
+            <!-- Sex -->
+            <div class="form-item">
+                <label>Sex:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="sex" value="Male" required> Male</label>
+                    <label><input type="radio" name="sex" value="Female" required> Female</label>
+                </div>
+            </div>
+
+            <!-- Course -->
+            <div class="form-item">
+                <label for="course">Course:</label>
+                <select id="course" name="course" required>
+                    <option value="BSIT">BSIT</option>
+                    <option value="BSSW">BSSW</option>
+                    <option value="BSPA">BSPA</option>
+                    <option value="BTVTED">BSIT</option>
+                    <option value="DHRS">BSSW</option>
+                    <option value="BSAIS">BSPA</option>
+                    <option value="BSAIS">BSE</option>
+                </select>
+            </div>
+
+            <!-- Interests -->
+            <div class="form-item">
+                <label>Interests:</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="interests" value="Web Development"> Web Development</label>
+                    <label><input type="checkbox" name="interests" value="Data Science"> Data Science</label>
+                    <label><input type="checkbox" name="interests" value="Networking"> Networking</label>
+                    <label><input type="checkbox" name="interests" value="Graphic Design"> Graphic Design</label>
+                </div>
+            </div>
+
+            <!-- SubBtn -->
+            <div class="form-item">
+                <button type="submit">Enroll Now</button>
+            </div>
+        </div>
+
+        <!-- MEME Table -->
+        <div class="table-box">
+            <h3>Enrolled Students</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Student No.</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Age</th>
+                        <th>Sex</th>
+                        <th>Course</th>
+                        <th>Interest</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>023A-10354</td>
+                        <td>Kienny Reeves</td>
+                        <td>kiennypatootie@IT2B.com</td>
+                        <td>21</td>
+                        <td>Male</td>
+                        <td>BSIT</td>
+                        <td>Web Development</td>
+                    </tr>
+                    <tr>
+                        <td>023A-10355</td>
+                        <td>Achie Mari</td>
+                        <td>itsachiee@IT2B.com</td>
+                        <td>19</td>
+                        <td>Female</td>
+                        <td>BSIT</td>
+                        <td>Graphic Design</td>
+                    </tr>
+                    <tr>
+                        <td>023A-10356</td>
+                        <td>Mery Salvazar</td>
+                        <td>mirimiri@IT2B.com</td>
+                        <td>20</td>
+                        <td>Female</td>
+                        <td>BSPA</td>
+                        <td>Networking</td>
+                    </tr>
+                    <tr>
+                        <td>023A-10357</td>
+                        <td>Miguelito Naglaho</td>
+                        <td>paranghangin@IT2B.com</td>
+                        <td>22</td>
+                        <td>Male</td>
+                        <td>DHRS</td>
+                        <td>Networking</td>
+                    </tr>
+                    <tr>
+                        <td>023A-10358</td>
+                        <td>Napholeon Bonamin</td>
+                        <td>bonakid@IT2B.com</td>
+                        <td>23</td>
+                        <td>Male</td>
+                        <td>BTVTED</td>
+                        <td>Data Science</td>
+                    </tr>
+                    <tr>
+                        <td>023A-10359</td>
+                        <td>Eios Eios</td>
+                        <td>bluebuffer@IT2B.com</td>
+                        <td>24</td>
+                        <td>Male</td>
+                        <td>BTVTED</td>
+                        <td>Networking</td>
+                    </tr>
+                    <tr>
+                        <td>023A-10360</td>
+                        <td>Johnny Test</td>
+                        <td>johnnywho@IT2B.com</td>
+                        <td>19</td>
+                        <td>Male</td>
+                        <td>BSIT</td>
+                        <td>Web Development</td>
+                    </tr>
+                    <tr>
+                        <td>023A-10361</td>
+                        <td>Krystel Hammock</td>
+                        <td>mylovelykristel@IT2B.com</td>
+                        <td>20</td>
+                        <td>Female</td>
+                        <td>BSPA</td>
+                        <td>Networking</td>
+                    </tr>
+                    <tr>
+                        <td>023A-10362</td>
+                        <td>Solar Boi</td>
+                        <td>whuthands@IT2B.com</td>
+                        <td>22</td>
+                        <td>Male</td>
+                        <td>DHRS</td>
+                        <td>Data Science</td>
+                    </tr>
+                    <tr>
+                        <td>023A-10363</td>
+                        <td>John Doe</td>
+                        <td>johndoe@IT2B.com</td>
+                        <td>18</td>
+                        <td>Male</td>
+                        <td>BSPA</td>
+                        <td>Networking</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+:root {
+    --primary-blue: #1e3a8a;
+    --secondary-blue: #3b82f6;
+    --accent-blue: #93c5fd;
+    --background-blue: #eff6ff;
+    --neutral-grey: #f1f5f9;
+    --text-color: #1f2937;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-blue);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.header-box {
+    background-color: var(--primary-blue);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.instructions-box {
+    background-color: var(--neutral-grey);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between items */
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.radio-group, .checkbox-group {
+    display: flex;
+    gap: 15px;
+}
+
+
+.table-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.table-box table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-box th, .table-box td {
+    border: 1px solid var(--neutral-grey);
+    padding: 8px;
+    text-align: left;
+}
+
+.table-box th {
+    background-color: var(--secondary-blue);
+    color: white;
+    font-weight: bold;
+}
+
+.table-box tr:nth-child(even) {
+    background-color: var(--accent-blue);
+}
+
+.table-box tr:hover {
+    background-color: var(--neutral-grey);
+}
+
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--primary-blue);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: var(--secondary-blue);
+}
